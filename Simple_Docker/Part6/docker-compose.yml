@@ -1,0 +1,12 @@
+version: '3'
+services:
+    fcgi:
+      build: ./Part5
+      container_name: meow
+      ports:
+        - 8080:8080
+    nginx:
+      build: ./Part6
+      container_name: pow
+      ports:
+        - 80:8080
